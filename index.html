@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(-45deg,#6a11cb,#2575fc,#00c9ff,#92fe9d);
+background-size:400% 400%;
+animation:bg 10s infinite ease;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.login-box{
+width:360px;
+padding:35px;
+background:rgba(255,255,255,0.18);
+backdrop-filter:blur(15px);
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+text-align:center;
+color:white;
+}
+
+.login-box h1{
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:13px;
+margin:12px 0;
+border:none;
+outline:none;
+border-radius:10px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:13px;
+margin-top:15px;
+border:none;
+border-radius:10px;
+font-size:17px;
+font-weight:bold;
+background:white;
+color:#2575fc;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+background:#f1f1f1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Welcome</h1>
+
+<form>
+
+<input type="text" placeholder="Input One">
+
+<input type="password" placeholder="Input Two">
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
